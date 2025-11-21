@@ -28,6 +28,6 @@ export const heroData = {
     "crafting efficient solutions.",
   ],
   description: [
-    "A seasoned Backend Engineer.  Passionate about distributed systems, cloud infrastructure, and open source.",
+    "A seasoned Web Developer.  Passionate about distributed systems, cloud infrastructure, and open source.",
   ],
 };
