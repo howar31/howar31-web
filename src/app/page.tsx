@@ -1,6 +1,6 @@
 import { Hero } from "@/components/hero";
 import { Skills } from "@/components/skills";
-import { ProjectGrid } from "@/components/project-grid";
+import { ProjectGrid } from "@/components/projects";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
