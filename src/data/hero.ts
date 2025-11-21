@@ -24,10 +24,10 @@ export const heroActions: HeroAction[] = [
 export const heroData = {
   title: "Howar31",
   subtitle: [
-    "Building scalable backend systems &",
+    "Building modern web applications &",
     "crafting efficient solutions.",
   ],
   description: [
-    "A seasoned Web Developer.  Passionate about distributed systems, cloud infrastructure, and open source.",
+    "A passionate Web Developer and open source enthusiast with deep roots in backend engineering and cloud infrastructure.",
   ],
 };
