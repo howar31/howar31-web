@@ -12,9 +12,15 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
 });
 
+import { siteConfig } from "@/data/config";
+
 export const metadata: Metadata = {
-  title: "Howar31 - Backend Engineer",
-  description: "Personal landing page of Howar31, a backend engineer and side project enthusiast.",
+  title: siteConfig.title,
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: siteConfig.authors,
+  openGraph: siteConfig.openGraph,
+  icons: siteConfig.icons,
 };
 
 export default function RootLayout({

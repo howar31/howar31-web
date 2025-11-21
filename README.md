@@ -78,6 +78,13 @@ export const projects = [
 ### 3. Skills / Tech Stack
 Edit `src/data/skills.ts` to update skill categories and items.
 
+### 4. Site Metadata (SEO)
+Edit `src/data/config.ts` to update:
+- Title & Description
+- Keywords
+- OpenGraph settings
+- Favicon path
+
 ## 📦 Deployment
 
 This project is configured with **GitHub Actions** for automated deployment to GitHub Pages.
