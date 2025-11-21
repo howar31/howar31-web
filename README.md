@@ -33,8 +33,8 @@ Designed with a deep blue & purple aesthetic, featuring a responsive layout and 
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/howar31/howar31-web.git
-    cd howar31-web
+    git clone https://github.com/howar31/landing-page.git
+    cd landing-page
     ```
 
 2.  Install dependencies:
@@ -67,7 +67,7 @@ export const projects = [
     title: "New Project",
     description: "Description...",
     url: "https://example.com",
-    tags: ["Go", "K8s"],
+    tags: ["Tag1", "Tag2"],
   },
   // ...
 ];
