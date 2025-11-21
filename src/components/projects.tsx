@@ -61,51 +61,66 @@ export function ProjectGrid() {
 
             const CardContent = (
               <>
-                <div className="flex justify-between items-start mb-4">
-                  <h3
-                    className={cn(
-                      "font-bold text-lg transition-colors",
-                      hasLink
-                        ? "text-slate-100 group-hover:text-blue-400"
-                        : "text-slate-100"
-                    )}
-                  >
-                    {project.title}
-                  </h3>
-                  {hasLink && (
-                    <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-blue-400 transition-colors" />
-                  )}
-                </div>
-
-                <p className="text-slate-400 mb-6 leading-relaxed text-sm flex-grow">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-2 mt-auto">
-                  {project.tags.map((tag) => (
-                    <button
-                      key={tag}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        setSelectedTag(selectedTag === tag ? "All" : tag);
-                      }}
+                <div className="relative z-10 h-full flex flex-col">
+                  <div className="flex justify-between items-start mb-4">
+                    <h3
                       className={cn(
-                        "text-xs font-medium px-2.5 py-1 rounded-full border transition-colors z-10 relative",
-                        selectedTag === tag
-                          ? "text-blue-300 bg-blue-950/80 border-blue-500/50"
-                          : "text-blue-300 bg-blue-950/30 border-blue-900/30 hover:bg-blue-900/50 hover:border-blue-800/50"
+                        "font-bold text-lg transition-colors",
+                        hasLink
+                          ? "text-slate-100 group-hover:text-blue-400"
+                          : "text-slate-100"
                       )}
                     >
-                      {tag}
-                    </button>
-                  ))}
+                      {project.title}
+                    </h3>
+                    {hasLink && (
+                      <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-blue-400 transition-colors" />
+                    )}
+                  </div>
+
+                  <p className="text-slate-400 mb-6 leading-relaxed text-sm flex-grow">
+                    {project.description}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {project.tags.map((tag) => (
+                      <button
+                        key={tag}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          setSelectedTag(selectedTag === tag ? "All" : tag);
+                        }}
+                        className={cn(
+                          "text-xs font-medium px-2.5 py-1 rounded-full border transition-colors z-10 relative",
+                          selectedTag === tag
+                            ? "text-blue-300 bg-blue-950/80 border-blue-500/50"
+                            : "text-blue-300 bg-blue-950/30 border-blue-900/30 hover:bg-blue-900/50 hover:border-blue-800/50"
+                        )}
+                      >
+                        {tag}
+                      </button>
+                    ))}
+                  </div>
                 </div>
+                {project.imageUrl && (
+                  <img
+                    src={project.imageUrl}
+                    alt=""
+                    className="absolute bottom-0 right-0 h-full w-[60%] opacity-30 object-cover pointer-events-none"
+                    style={{
+                      maskImage:
+                        "linear-gradient(110deg, transparent 20%, black 100%)",
+                      WebkitMaskImage:
+                        "linear-gradient(110deg, transparent 20%, black 100%)",
+                    }}
+                  />
+                )}
               </>
             );
 
             const cardClasses =
-              "group flex flex-col p-6 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-900/80 transition-all duration-300 backdrop-blur-sm h-full";
+              "group flex flex-col p-6 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-900/80 transition-all duration-300 backdrop-blur-sm h-full relative overflow-hidden";
 
             return (
               <motion.div
