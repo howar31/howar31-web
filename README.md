@@ -3,6 +3,8 @@
 A minimalist, performance-focused personal landing page.
 Designed with a deep blue & purple aesthetic, featuring a responsive layout and data-driven content.
 
+**Live Demo / Example**: [howar31.com](https://howar31.com)
+
 ## 🚀 Tech Stack
 
 - **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
