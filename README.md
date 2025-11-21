@@ -1,6 +1,6 @@
-# Howar31 - Personal Landing Page
+# Personal Landing Page
 
-A minimalist, performance-focused personal landing page built for a backend engineer.
+A minimalist, performance-focused personal landing page.
 Designed with a deep blue & purple aesthetic, featuring a responsive layout and data-driven content.
 
 ## 🚀 Tech Stack
