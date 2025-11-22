@@ -113,7 +113,7 @@ export function ProjectGrid() {
                   <div className="flex justify-between items-start mb-4">
                     <h3
                       className={cn(
-                        "font-bold text-lg transition-colors",
+                        "font-bold text-lg transition-colors pr-4",
                         hasLink
                           ? "text-slate-100 group-hover:text-blue-400"
                           : "text-slate-100"
@@ -121,11 +121,13 @@ export function ProjectGrid() {
                     >
                       {project.title}
                     </h3>
-                    {!hasLink ? (
-                      <Lock className="w-5 h-5 text-slate-500 transition-colors" />
-                    ) : (
-                      <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-blue-400 transition-colors" />
-                    )}
+                    <div className="shrink-0 mt-1">
+                      {!hasLink ? (
+                        <Lock className="w-4 h-4 text-slate-800" />
+                      ) : (
+                        <ExternalLink className="w-4 h-4 text-slate-800 group-hover:text-blue-400 transition-colors" />
+                      )}
+                    </div>
                   </div>
 
                   <p className="text-slate-400 mb-6 leading-relaxed text-sm flex-grow">
