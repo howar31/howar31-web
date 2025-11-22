@@ -123,7 +123,9 @@ export function ProjectGrid() {
                     </h3>
                     <div className="shrink-0 mt-1">
                       {!hasLink ? (
-                        <Lock className="w-4 h-4 text-slate-800" />
+                        <div title="This is a private project">
+                          <Lock className="w-4 h-4 text-slate-800" />
+                        </div>
                       ) : (
                         <ExternalLink className="w-4 h-4 text-slate-800 group-hover:text-blue-400 transition-colors" />
                       )}
