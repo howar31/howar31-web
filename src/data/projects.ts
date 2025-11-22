@@ -14,21 +14,21 @@ export const projects: Project[] = [
     description:
       "A minimalist, performance-focused personal landing page built with Next.js. (a.k.a this website)",
     url: "https://github.com/howar31/landing-page",
-    tags: ["Website"],
+    tags: ["Design", "Website"],
     imageUrl: "",
   },
   {
     title: "Star Citizen 中文社群網",
     description: "Traditional Chinese community website for Star Citizen.",
     url: "http://starcitizen.howar31.com/",
-    tags: ["Community", "Website", "Game"],
+    tags: ["Community", "Game", "Website"],
     imageUrl: "starcitizen.jpg",
   },
   {
     title: "GW2 Timer",
     description: "Guild Wars 2 World Boss Event Timer.",
     url: "https://gw2timer.howar31.com/",
-    tags: ["Tool", "Game"],
+    tags: ["Game", "Tool", "Website"],
     imageUrl:
       "https://github.com/howar31/GW2Timer/raw/gh-pages/GW2Timer_Preview_en.png",
   },
@@ -36,14 +36,14 @@ export const projects: Project[] = [
     title: "PTT 推樂透",
     description: "Lottery tool for PTT (Taiwanese BBS).",
     url: "https://pttlottery.howar31.com/",
-    tags: ["Tool"],
+    tags: ["Tool", "Website"],
     imageUrl: "https://github.com/howar31/PTTLottery/raw/gh-pages/preview.png",
   },
   {
     title: "Countdown",
     description: "A pure JavaScript countdown timer.",
     url: "https://countdown.howar31.com/",
-    tags: ["Tool"],
+    tags: ["Tool", "Website"],
     imageUrl: "https://github.com/howar31/countdown/raw/gh-pages/preview2.png",
   },
   {
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     description:
       "A prank web app simulating credit card scanning to raise security awareness.",
     url: "https://howar31.github.io/prank_credit_card_scan/",
-    tags: ["Website", "Tool"],
+    tags: ["Tool", "Website"],
     imageUrl: "",
   },
   {
@@ -129,7 +129,7 @@ export const projects: Project[] = [
     title: "Trove Auto Fishing",
     description: "AutoHotKey script for auto fishing in Trove.",
     url: "https://github.com/howar31/Trove-AHK-AutoFish",
-    tags: ["Tool", "Game"],
+    tags: ["Game", "Tool"],
     imageUrl: "",
   },
   {
@@ -158,7 +158,7 @@ export const projects: Project[] = [
     title: "Oh-My-Zsh Powerline Theme",
     description: "A modified Powerline style theme for Oh My Zsh.",
     url: "https://github.com/howar31/oh-my-zsh-powerline-theme",
-    tags: ["Tool", "Design"],
+    tags: ["Design", "Tool"],
     imageUrl: "",
   },
 ];
