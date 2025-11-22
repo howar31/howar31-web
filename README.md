@@ -71,6 +71,7 @@ Edit `src/data/hero.ts` to update:
 Edit `src/data/projects.ts` to manage your portfolio:
 
 ```typescript
+// Project Items
 export const projects = [
   {
     title: "New Project",
@@ -79,6 +80,22 @@ export const projects = [
     tags: ["Tag1", "Tag2"],
   },
   // ...
+];
+
+// More projects button
+export const moreProjects = {
+  text: "More on WEBSITE",
+  url: "https://example.com",
+  icon: Github, // remember to import
+};
+
+// Social Links (Footer)
+export const socialLinks = [
+  {
+    title: "SOCIAL PLATFORM",
+    url: "https://example.com",
+    icon: Github, // remember to import
+  },
 ];
 ```
 
